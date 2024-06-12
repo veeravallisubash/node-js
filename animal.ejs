@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightcoral;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            background-color:aliceblue;
+            padding: 20px 30px;
+            border-radius: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .data h2 {
+            color:rebeccapurple;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .data p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .data p span {
+            font-weight: bold;
+        
+        }
+
+        .data p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <div class="data">
+            <h2> information of the <%= name %></h2>
+            <p><span>Name:</span> <%= name %></p>
+            <p><span>Location:</span> <%= location %></p>
+            <p><span>Diet:</span> <%= diet %></p>
+            <p><span>Color:</span> <%= color %></p>
+
+        </div>
+    </main>
+</body>
+</html>
