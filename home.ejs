@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+           color:blue;
+        }
+
+        .search {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid green;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>ENTER ANIMAL:</h3>
+        <form action="/animaldata" method="post">
+            <input type="text" placeholder="search for animal" name="animalname" class="search">
+        </form>
+    </div>
+</body>
+</html>
